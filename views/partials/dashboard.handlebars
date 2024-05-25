@@ -1,0 +1,20 @@
+<div class="galeria-productos py-3 row">
+    {{#each productos}}
+        {{> producto this}}
+    {{/each}}
+</div>
+
+<style>
+    .contenedor-producto img {
+        width: 80%;
+    }
+</style>
+
+<script>
+    let carrito = [];
+
+    function agregarAlCarrito(nombre) {
+        carrito.push(nombre);
+        console.log(carrito);
+    }
+</script>
